@@ -12,4 +12,7 @@ The code is separated into two folders, [preprocessing](preprocessing) and [mode
 
 In the preprocessing folder, 'datasetsCleaned.ipnyb' is the main notebook to run. The complementary notebook 'sunrisesunset-webcrawling.ipnyb' is the script to obtain the sunrise and sunset timings from the Open Source API.
 
-For the modelling files, they are to be in the following sequence: 'modeling.ipnyb' and 'modeling II.ipnyb'. The first notebook uses the daily dataset, and the second notebook extends upon the daily dataset by adding a binary feature of daytime/nighttime based on the sunrise and sunset timings, and a feature for time of day. 
+For the modelling files, they are to be in the following sequence: 'modeling.ipnyb' and 'modeling II.ipnyb'. The first notebook uses the daily dataset, and the second notebook extends upon the daily dataset by adding a binary feature of daytime/nighttime based on the sunrise and sunset timings, and a feature for time of day. The LSTM models should be run in this sequence:
+a) modelling III - a (time series).ipynb
+b) modeling - LSTM part a.ipynb
+c) modeling - LSTM part b.ipynb
